@@ -8,8 +8,8 @@ function App() {
   return (
     <>
       <section className="statusAndUserContent">
-        <Status />
-        <User />
+        <Status/>
+        <User/>
       </section>
       <section>
         <Card data={data} />
