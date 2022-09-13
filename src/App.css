@@ -1,38 +1,223 @@
-.App {
-  text-align: center;
+body {
+  width: 1000px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cardsSection {
   display: flex;
   flex-direction: column;
+}
+.PostsDate {
+  margin-top: 10px;
+  padding: 20px 0px;
+}
+.Cards {
+  display: flex;
+  flex-direction: row;
+}
+.Card {
+  border-radius: 5px;
+  width: 23rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: flex;
+  margin-left: 40px;
+  margin-top: 30px;
+  border: 0.1px solid gainsboro;
+}
+.CardDetails {
+  min-width: 80%;
+  padding: 15px 20px;
+}
+.cardDateandActions {
+  font-size: medium;
+  display: flex;
+  padding: 10px;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
+}
+.channelTrue {
+  min-width: 10%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  background-color:goldenrod !important;
+}
+.actionsBar {
+  display: flex;
+}
+.actionsIcon i {
+  font-size: 22px;
+}
+
+.uil-facebook-f {
   color: white;
+  font-size: x-large;
 }
 
-.App-link {
-  color: #61dafb;
+.uil-instagram {
+  color: white;
+  font-size: x-large;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.uil-twitter {
+  color: white;
+  font-size: x-large;
+}
+.cardActive {
+  background-image: url("../no-post-image.png");
+  height: 18rem;
+  width: 100%;
+  background-position: 50% 50%;
+}
+.cardActive img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.activeMessage {
+  padding: 12px 10px;
+}
+.postStaticsContent {
+  padding: 0%;
+}
+.postStaticsContent .postStaticsList {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  list-style: none;
+  padding: 0%;
+}
+.postStaticsItem {
+  font-size: 20px;
+  width: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 5px;
+}
+.postStaticsItem span {
+  font-size: medium;
+}
+
+.channelFalse {
+  background-color: green !important;
+  min-width: 10%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.statusContent{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  width: 75%;
+}
+.statusContent .Published{  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+}
+.Published .circle{
+  width: 12px;
+  height: 12px;
+  background-color: gray;
+  border-radius: 50%;
+} 
+.Published .statusText{
+  padding: 0px 5px;
+  color: #343434;
+}
+.statusContent .Scheduled{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+}
+.Scheduled .circle{
+  width: 12px;
+  height: 12px;
+  background-color: rgb(2, 243, 2);
+  border-radius: 50%;
+} 
+.Scheduled .statusText{
+  padding: 0px 5px;
+  color: #343434;
+}
+.statusContent .Need-Approval{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+}
+.Need-Approval .circle{
+  width: 12px;
+  height: 12px;
+  background-color:goldenrod;
+  border-radius: 50%;
+} 
+.Need-Approval .statusText{
+  padding: 0px 5px;
+  color: #343434;
+}
+.statusContent .Error{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+}
+.Error .circle{
+  width: 12px;
+  height: 12px;
+  background-color:red;
+  border-radius: 50%;
+} 
+.Error .statusText{
+  padding: 0px 5px;
+  color: #343434;
+}
+.statusContent .Notes{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+}
+.Notes .circle{
+  width: 12px;
+  height: 12px;
+  background-color:rgb(0, 213, 255);
+  border-radius: 50%;
+} 
+.Notes .statusText{
+  padding: 0px 5px;
+  color: #343434  ;
+}
+.statusAndUserContent{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.userContent{
+  width: 5%;
+}
+.userContent img{
+  width: 100%;
+  border-radius: 50%;
 }
